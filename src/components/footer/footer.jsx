@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,16 +9,17 @@ function Footer() {
         <ul>
           <img className="logo" src="img/logo.png" alt="logo img" />
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/testimonial.html">Testimonials</a>
+            <Link to="/testimonials"> Testimonials </Link>
           </li>
           <li>
-            <a href="#">Our Website</a>
+            {" "}
+            <Link to="/">Our Website </Link>
           </li>
           <li>
-            <a href="#">Download</a>
+            <Link to="/"> Download</Link>
           </li>
         </ul>
         <div className="footer-social-link">
