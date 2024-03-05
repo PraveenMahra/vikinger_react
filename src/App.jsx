@@ -4,6 +4,7 @@ import TestimonialPage from "./pages/testimonial/testimonialPage";
 import SignIn from "./pages/signIn/signInPage";
 import ForgetPassword from "./pages/forgetPassword/forgetPassword";
 import { useEffect } from "react";
+import BlogPage from "./pages/blog/blogPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="testimonials" element={<TestimonialPage />} />
         <Route path="signIn" element={<SignIn />} />
         <Route path="forgetPassword" element={<ForgetPassword />} />
+        <Route path="blog" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   );
